@@ -1,1 +1,5 @@
-%h1 My Blog 
+%h1= "#{@name}'s Blog"
+
+- @posts.each do |p|
+  %h3= p.title
+  %p= p.body
